@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nintendo Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#" id="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div id="featured-container">
+                <!-- Featured products will be dynamically added here -->
+            </div>
+            <button onclick="window.location.href='products.html'">View All Products</button>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to the Nintendo Store! We offer a wide range of Nintendo products including consoles, games, amiibo, and merchandise. Our goal is to provide the best shopping experience for Nintendo fans. Explore our collection and find your favorite Nintendo items!</p>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <button id="checkout-button">Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nintendo Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
